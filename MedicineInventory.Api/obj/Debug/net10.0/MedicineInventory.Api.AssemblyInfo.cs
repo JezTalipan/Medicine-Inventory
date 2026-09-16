@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MedicineInventory.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a680ccafeb7e3c95b8d7e73b100a12c0a886479d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ecd60590c48d60fa2d92471ce8f3663a4f7acc7")]
 [assembly: System.Reflection.AssemblyProductAttribute("MedicineInventory.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MedicineInventory.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

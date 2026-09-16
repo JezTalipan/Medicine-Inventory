@@ -1,6 +1,50 @@
 @MedicineInventory.Api_HostAddress = http://localhost:5029
+@token = paste-the-token-from-the-login-response
 
-GET {{MedicineInventory.Api_HostAddress}}/weatherforecast/
-Accept: application/json
+### Login
+POST {{MedicineInventory.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+### List medicines
+GET {{MedicineInventory.Api_HostAddress}}/api/medicines
+Authorization: Bearer {{token}}
+
+### Create a medicine
+POST {{MedicineInventory.Api_HostAddress}}/api/medicines
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Ibuprofen 400mg",
+  "genericName": "Ibuprofen",
+  "category": "Analgesic",
+  "quantity": 120,
+  "unitPrice": 4.50,
+  "expiryDate": "2027-06-30",
+  "supplier": "MedSupply Co."
+}
+
+### Record a sale
+POST {{MedicineInventory.Api_HostAddress}}/api/sales
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "medicineId": 1,
+  "quantitySold": 3
+}
+
+### Dashboard summary
+GET {{MedicineInventory.Api_HostAddress}}/api/dashboard/summary
+Authorization: Bearer {{token}}
+
+### Download the Excel report
+GET {{MedicineInventory.Api_HostAddress}}/api/reports/medicines
+Authorization: Bearer {{token}}
 
 ###

@@ -1,5 +1,5 @@
 {
-  "name": "Medicine Inventory",
+  "name": "jez-meds",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -11,9 +11,13 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.3.4",
     "antd": "^6.6.4",
+    "dayjs": "^1.11.23",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4",
+    "recharts": "^3.10.1"
   },
   "devDependencies": {
     "@rsbuild/core": "^2.2.7",
