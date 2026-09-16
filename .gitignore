@@ -1,0 +1,40 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio Code
+.vscode/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Test results
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# ASP.NET / .NET local files
+appsettings.Local.json
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Publish output
+publish/
