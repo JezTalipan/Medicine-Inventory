@@ -45,7 +45,7 @@ dotnet restore
 dotnet run --launch-profile http
 ```
 
-Runs on <http://localhost:5029>, with Swagger UI at <http://localhost:5029/swagger>. Log in through
+Runs on <http://localhost:7195>, with Swagger UI at <http://localhost:7195/swagger>. Log in through
 `/api/auth/login`, then use the **Authorize** button to call the protected endpoints.
 
 ### 3. Front end
@@ -60,7 +60,7 @@ Runs on <http://localhost:3000>. The API base URL comes from `PUBLIC_API_URL` in
 
 ### Default login
 
-`admin` / `admin123`
+`Username:admin` / `Password:admin123`
 
 ## API endpoints
 
@@ -86,3 +86,7 @@ Every endpoint except login requires an `Authorization: Bearer <token>` header.
   migrations. Change the scripts first.
 - Change the `Jwt:Key` in `appsettings.json` (or override it in `appsettings.Local.json`) before
   deploying anywhere real. It must be at least 32 characters.
+
+## Challenges Encountered
+
+-Focused on developing proficiency in .NET, Entity Framework Core, and Microsoft SQL Server (MSSQL), while building familiarity with REST API development.
